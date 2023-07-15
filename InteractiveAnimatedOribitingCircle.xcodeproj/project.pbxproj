@@ -11,6 +11,11 @@
 		1E6B5AB52A628EBE0053F7F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6B5AB42A628EBE0053F7F4 /* ContentView.swift */; };
 		1E6B5AB72A628EBF0053F7F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E6B5AB62A628EBF0053F7F4 /* Assets.xcassets */; };
 		1E6B5ABA2A628EBF0053F7F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E6B5AB92A628EBF0053F7F4 /* Preview Assets.xcassets */; };
+		1E6B5AC42A628EEE0053F7F4 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6B5AC32A628EEE0053F7F4 /* Double+Extension.swift */; };
+		1E6B5AC52A628EEE0053F7F4 /* CGPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6B5AC22A628EEE0053F7F4 /* CGPoint+Extension.swift */; };
+		1E6B5AC72A628EF00053F7F4 /* PolarCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6B5AC62A628EF00053F7F4 /* PolarCoordinates.swift */; };
+		1E6B5AC92A628F380053F7F4 /* InteractiveOribitingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6B5AC82A628F380053F7F4 /* InteractiveOribitingCircle.swift */; };
+		1E6B5AD02A628FAF0053F7F4 /* Arc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6B5ACF2A628FAF0053F7F4 /* Arc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		1E6B5AB42A628EBE0053F7F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1E6B5AB62A628EBF0053F7F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E6B5AB92A628EBF0053F7F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E6B5AC22A628EEE0053F7F4 /* CGPoint+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extension.swift"; sourceTree = "<group>"; };
+		1E6B5AC32A628EEE0053F7F4 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		1E6B5AC62A628EF00053F7F4 /* PolarCoordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarCoordinates.swift; sourceTree = "<group>"; };
+		1E6B5AC82A628F380053F7F4 /* InteractiveOribitingCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveOribitingCircle.swift; sourceTree = "<group>"; };
+		1E6B5ACF2A628FAF0053F7F4 /* Arc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,10 @@
 		1E6B5AB12A628EBE0053F7F4 /* InteractiveAnimatedOribitingCircle */ = {
 			isa = PBXGroup;
 			children = (
+				1E6B5ACC2A628F4E0053F7F4 /* Utilities */,
+				1E6B5ACB2A628F470053F7F4 /* Models */,
+				1E6B5ACA2A628F410053F7F4 /* Views */,
 				1E6B5AB22A628EBE0053F7F4 /* InteractiveAnimatedOribitingCircleApp.swift */,
-				1E6B5AB42A628EBE0053F7F4 /* ContentView.swift */,
 				1E6B5AB62A628EBF0053F7F4 /* Assets.xcassets */,
 				1E6B5AB82A628EBF0053F7F4 /* Preview Content */,
 			);
@@ -65,6 +77,49 @@
 				1E6B5AB92A628EBF0053F7F4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1E6B5ACA2A628F410053F7F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1E6B5ACE2A628F970053F7F4 /* Shapes */,
+				1E6B5AB42A628EBE0053F7F4 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1E6B5ACB2A628F470053F7F4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E6B5AC62A628EF00053F7F4 /* PolarCoordinates.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1E6B5ACC2A628F4E0053F7F4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1E6B5ACD2A628F560053F7F4 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1E6B5ACD2A628F560053F7F4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1E6B5AC22A628EEE0053F7F4 /* CGPoint+Extension.swift */,
+				1E6B5AC32A628EEE0053F7F4 /* Double+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1E6B5ACE2A628F970053F7F4 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				1E6B5AC82A628F380053F7F4 /* InteractiveOribitingCircle.swift */,
+				1E6B5ACF2A628FAF0053F7F4 /* Arc.swift */,
+			);
+			path = Shapes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +194,11 @@
 			files = (
 				1E6B5AB52A628EBE0053F7F4 /* ContentView.swift in Sources */,
 				1E6B5AB32A628EBE0053F7F4 /* InteractiveAnimatedOribitingCircleApp.swift in Sources */,
+				1E6B5AD02A628FAF0053F7F4 /* Arc.swift in Sources */,
+				1E6B5AC52A628EEE0053F7F4 /* CGPoint+Extension.swift in Sources */,
+				1E6B5AC72A628EF00053F7F4 /* PolarCoordinates.swift in Sources */,
+				1E6B5AC92A628F380053F7F4 /* InteractiveOribitingCircle.swift in Sources */,
+				1E6B5AC42A628EEE0053F7F4 /* Double+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
