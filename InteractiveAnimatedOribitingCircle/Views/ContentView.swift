@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  InteractiveAnimatedOribitingCircle
+//  o
 //
 //  Created by Aafaq Ahmed Saqi on 15/07/2023.
 //
